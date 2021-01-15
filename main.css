@@ -1,0 +1,176 @@
+
+html, body {
+    margin:0;
+    padding:0;
+    font-family:arial;
+}
+
+.page-container {
+    /*height 100 of viewport keeps footer at bottom*/
+    position:relative;
+    min-height:100vh;
+}
+
+a:hover { text-decoration: underline;}
+
+/* NAVIGATION */
+nav {
+    height:100px;
+    padding-top:5px;
+}
+
+nav ul {
+    margin:0;
+    margin-left:15px;
+}
+
+nav ul li {
+    display:inline-block;
+    margin-right:15px;
+    font-size:13px;
+}
+
+.left-nav {
+    float:left;
+    padding-left: 1%;
+    padding-top:5px;
+}
+
+.right-nav {
+    float:right;
+    padding-right:1%;
+}
+
+nav a {
+    text-decoration:none;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+nav img {
+    vertical-align:middle;
+    
+}
+nav button {
+    border-radius:2px;
+    background-color: rgb(95, 140, 216);
+    height:30px;
+    color:white;
+    font-weight:700;
+    border:none;
+    padding: 0px 13px 0px 13px;
+    vertical-align:middle;
+}
+
+/* MAIN CONTENT */
+main {
+    padding-top:109px;
+    text-align:center;
+    margin:auto;
+    /*padding prevents footer from overlapping main when collapsing */
+    padding-bottom: 50px; 
+}
+
+.search-bar {
+    position: relative;
+    margin:auto;
+    width:475px;
+}
+
+#search-bar-bar {
+    width:475px;
+    height:35px;
+    border-radius: 15px;
+    border-style:solid;
+    margin-top: 25px;
+    margin-bottom:25px;
+    padding-left:40px;
+}
+
+#search-bar-img {
+    position:absolute;
+    top:32px;
+    left:8px;
+    border-radius:15px;
+}
+
+.search-btns button {
+    height:34px;
+    background-color:rgb(248, 249, 250);
+    border:1px solid rgb(248,249,250);
+    border-radius:6px;
+}
+
+.search-btns button:hover {
+    box-shadow: 1px 1px 1px 2px #dbd4d4;
+    
+}
+
+/* FOOTER */
+footer {
+    position:absolute;
+    bottom:0;
+    height:50px;
+    width:100%;
+    background-color:rgb(242,242,242);
+}
+
+footer ul {
+    margin-left:15px;
+    display:inline-block;
+}
+
+footer ul li {
+    display:inline-block;
+    margin-right:15px;
+}
+
+.left-footer {
+    padding-left:1%;
+}
+
+.right-footer {
+    float:right;
+    padding-right:1%;
+}
+
+footer a {
+    text-decoration:none;
+    font-size:14px;
+    color:rgb(112, 117, 122);
+}
+
+
+/* RESPONSIVE */
+
+@media  (max-height: 300px) {
+    main {
+        padding-top:0;
+    }
+}
+
+@media (max-width: 450px) {
+    .search-bar {
+        width:80%;
+    }
+}
+
+@media (max-width:800px) {
+
+    footer { 
+        height: 80px;
+        margin:auto;
+    }
+
+    .left-footer {
+        text-align:center;
+        display:block;
+    }
+
+    .right-footer {
+        float:none;
+        display:block;
+        text-align:center;
+        padding-left:0;
+    }
+}
+
